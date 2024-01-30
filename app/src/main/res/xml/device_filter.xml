@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--FTP-629DSL350-->
+    <usb-device vendor-id="1072" product-id="1565" />
+    <usb-device vendor-id="1072" product-id="1583" />
+
+    <!--FTP-62HWSL001-->
+    <usb-device vendor-id="1072" product-id="1699" />
+
+    <!--FTP-62GDSL000-->
+    <usb-device vendor-id="1072" product-id="1571" />
+    <usb-device vendor-id="1072" product-id="1700" />
+
+    <!--FTP-62HDSL100-->
+    <usb-device vendor-id="1072" product-id="1576" />
+
+</resources>

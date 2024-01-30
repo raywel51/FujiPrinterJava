@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSampleDiscoverPrinter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Discover printer"></Button>
+
+        <Button
+            android:id="@+id/buttonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description" />>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="Connection"
+            android:textAlignment="viewEnd" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <RadioButton
+                android:id="@+id/radioButtonConnectionUsb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USB" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBluetoothClassic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bluetooth Classic" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:text="Device name"
+            android:textAlignment="viewEnd" />
+
+        <EditText
+            android:id="@+id/editTextDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Not selected" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:text="Model"
+            android:textAlignment="viewEnd" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSampleModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <RadioButton
+                android:id="@+id/radioButtonSampleFtp_62Gdsl000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FTP-62GDSL000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSampleFtp_62hDsl100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FTP-62HDSL100" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSampleFtp_629Dsl350"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FTP-629DSL350" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0"
+            android:text="Width\n(pixels)"
+            android:textAlignment="textStart" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupSampleWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:checkedButton="@id/radioButtonSample384"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonSample384"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="384 " />
+
+            <RadioButton
+                android:id="@+id/radioButtonSample432"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="432 " />
+
+            <RadioButton
+                android:id="@+id/radioButtonSample576"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="576 " />
+
+            <RadioButton
+                android:id="@+id/radioButtonSample832"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="832 " />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSampleConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+
+
+    <Button
+        android:id="@+id/buttonPrintReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print receipt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonPrintText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print text" />
+
+        <EditText
+            android:id="@+id/editTextPrintText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="FTP-POS sample code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print QR" />
+
+        <Button
+            android:id="@+id/buttonQrShiftJis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shft-JIS" />
+
+        <Button
+            android:id="@+id/buttonQrUtf8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UTF-8" />
+
+        <Button
+            android:id="@+id/buttonQrGbk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GBK" />
+
+        <EditText
+            android:id="@+id/editTextPrintQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="1234567890" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Print Bitmap" />
+
+        <Button
+            android:id="@+id/buttonPrintBitmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Picture" />
+
+        <Button
+            android:id="@+id/buttonPrintBitmapCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Camera" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMarkFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mark feed" />
+
+    <Button
+        android:id="@+id/buttonCutPaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cut paper" />
+
+    <Button
+        android:id="@+id/buttonSendBinary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send binary" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close" />
+
+
+</LinearLayout>
